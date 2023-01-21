@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,400&display=swap');
+
+
+
+.home{
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    color: #111111;
+}
+.home::after{
+    position: absolute;
+    content: '>';
+    padding-left: 4px;
+    
+}
+.span-shop{
+    color: #888888;
+    font-size: 15px;
+    font-weight: 500;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+h4{
+    
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h4::after{
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 70px;
+    background: #ca1515;
+    content: "";
+}
+
+.shop-by-color .list-group-item a,.shop-by-size .list-group-item a{
+    color: #444444;
+}
+
+.categories .accordion-body .list-group-item a{
+    font-size: 14px;
+    color: #666666;
+}
+
+
+
+col-lg-3 .product-item{
+    height: 80%;
+}
+.product-item .bar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    opacity: 0;
+    bottom: 20px;
+    transition: bottom .7s;
+    left: 15%;
+    
+    transform: translate(50%, 50%);
+    gap: 20%;
+
+
+}
+
+.product-item:hover .bar {
+    opacity: 1;
+    bottom: 45%;
+
+}
+.product-item .bar a .bar1{
+    background-color:white;
+    color:#212529;
+    margin-left: 3px;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .5s;
+    
+}
+.product-item .bar a:hover .bar1 {
+    transform:rotate(360deg) ;
+    background-color: #ca1515;
+    color: white ;
+    
+
+}
