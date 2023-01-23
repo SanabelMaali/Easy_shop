@@ -1,8 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+/* start navbar */
+nav{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px #d8d8d8;
+    position: sticky;
+} 
+.navbar .navbar-nav .nav-item{
+    margin: 10px 5px;
 
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color:#111111;
+    text-transform: uppercase;
+    position: relative;
+    width: fit-content;
+    transition: .2s;
+   
+    
+}
+.navbar .navbar-nav .nav-item .nav-link.active::after{
+    width: 80%;
+}
+.navbar .navbar-nav .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    width: 0;
+    background-color: #ca1515;
+    transition: .5s;
+    height: 2px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::after{
+    width: 73%;
+}
+.navbar .navbar-nav .nav-item:nth-child(4) .nav-link:hover::after{
+    width: 90%;
+    
+}
+.navbar .navbar-nav .nav-item:nth-child(5) .nav-link:hover::after{
+    width: 84%;
+}
+.navbar .iconLog .log{
+    position: relative;
+}
+.navbar .iconLog .log a{
+    padding: 0 3px;
+    color: #666666;
+    text-decoration: none;
+}
+.navbar .iconLog .log::after{
+    position: absolute;
+    color: #666666;
+    top: 3px;
+    right: 56%;
+    content: "/";
+    font-size: 15px;
+}
+.navbar .iconLog .icons i{
+    padding: 0 5px;
+    font-size: 18px;
+    color: #111111;
+}
+.navbar .iconLog .icons{
+    position: relative;
+}
+.navbar .iconLog .icons .tip[val='1']{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background-color: #111111;
+    text-align: center;
+    right: -8px;
+    top: -14px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 50%;
+}
+.navbar .iconLog .icons .tip[val='2']{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background-color: #111111;
+    text-align: center;
+    right: 21px;
+    top: -14px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 50%;
+}
+@media screen and (min-width:576px) and (max-width:991px){
+    nav .navbar-collapse {
+        position: relative;
+        
+        
+        
+    }
+    
+    nav .navbar-collapse .iconLog .icons{
+        position: absolute;
+        top: 0;  
+        left: 25%;
+        margin-top: 2%;
+    }
+    nav .navbar-collapse .iconLog .log{
+        position: absolute;
+        top: 0; 
+        left: 0%;
+        margin-top: 2%;
+         
+    }
+    nav .navbar-collapse .navbar-nav .nav-item .nav-link{
+        left: 0;
+
+    }
+    nav .navbar-collapse .navbar-nav .nav-item .nav-link.active{
+        margin-top: 7%;
+    }
+}
+@media screen and (max-width:755px){
+    nav .navbar-collapse {
+        position: relative;
+        
+        
+        
+    }
+    nav .navbar-collapse .iconLog .icons{
+        position: absolute;
+        top: 0;  
+        left: 25%;
+        margin-top: 2%;
+    }
+    nav .navbar-collapse .iconLog .log{
+        position: absolute;
+        top: 0; 
+        left: 0%;
+        margin-top: 2%;
+         
+    }
+    nav .navbar-collapse .navbar-nav .nav-item .nav-link{
+        left: 0;
+
+    }
+    nav .navbar-collapse .navbar-nav .nav-item .nav-link.active{
+        margin-top: 7%;
+    }
+  
+
+}
+/* end navbar */
 
 .home{
     position: relative;
@@ -154,4 +319,305 @@ col-lg-3 .product-item{
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
 }
+
+/* start footer */
+
+
+footer .row .col-md-2{
+   
+    position: relative;
+
+}
+footer .row .col-md-2 .instagram::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    
+     width: 100%;
+     height: 330px;
+      background-color: rgba(255, 255, 255, 0.9);;
+      opacity: 0;
+      transition: opacity.2s;
+     
+      
+  
+}
+footer .row .col-md-2 .instagram:hover::after{
+    opacity: 1;
+
+
+
+} 
+
+footer .row .imgs img{
+    width: 100%;
+    height: 330px;
+}
+
+footer .row .col-md-2 .instagram .insta a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+footer .row .col-md-2 .instagram .insta i{
+    font-size: 30px;
+    color: #0d0d0d; 
+}
+
+
+
+footer .col-md-12 .row .col-md-2 .instagram .insta{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility:hidden;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+footer .col-md-12 .row .col-md-2 .instagram:hover .insta{
+
+   visibility: visible;
+   z-index: 99;
+   
+}
+
+footer .row .col-md-3 .footer-about{
+    margin-right: 10%;
+}
+
+footer .row .col-md-3 .footer-about .foot-img{
+    width: 100%;
+    margin-bottom: 5%;
+}
+footer .row .col-md-3 .footer-about p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    color: #666666c4;
+    line-height: 24px;
+    width: 132%;
+
+}
+footer .row .col-md-3 .footer-about ul{
+    display: flex;
+    gap:10px;
+}
+ 
+footer .row .col-md-2 .footer__widget h6{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom:12px ;
+    text-transform: uppercase;
+    width: 132%;
+    line-height: 1.2;
+}
+footer .row .col-md-2 .footer__widget {
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 20%;
+}
+footer .row .col-md-3 .footer__widget {
+    margin-top: 10%;
+}
+
+
+footer .row .col-md-2 .footer__widget ul a{
+    font-size: 14px;
+    color: #666666c4;
+    line-height: 30px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+footer .row .col-md-3 .footer__widget h6{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom:12px ;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+footer .row .col-md-3 .footer__widget form{
+    position: relative;
+    margin-bottom: 30px;
+}
+footer .row .col-md-3 .footer__widget form input{
+    width: 132%;
+    height: 52px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666666;
+    font-family: "Montserrat", sans-serif;
+
+}
+footer .row .col-md-3 .footer__widget .site-btn{
+    position: absolute;
+    top: 1px;
+    
+    right: -32%;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ca1515;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-block;
+
+}
+footer .row .col-md-3 .footer__widget .icon a {
+width: 40px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+color: #111111;
+background-color: #e1e1e1;
+font-size: 15px;
+margin-right: 6px;
+margin-bottom: 5px;
+padding: 10px 16px;
+transition: .5s;
+display: inline-block;
+
+}
+footer .row .col-md-3 .footer__widget .icon a i{
+   padding-bottom: 3%;
+   transform: translate(-25%,-50%);
+}
+footer .row .col-md-3 .footer__widget .icon a:hover  {
+    transform: rotate(360deg);
+    color: #fff ;
+    
+}
+footer .row .col-md-3 .footer__widget .icon a:nth-child(1):hover {
+    background-color: #3b5999;
+    color: #fff;
+}
+footer .row .col-md-3 .footer__widget .icon a:nth-child(2):hover {
+    background-color: #00acee;
+    color: #fff;
+}
+footer .row .col-md-3 .footer__widget .icon a:nth-child(3):hover {
+    background-color: #FD1D1D;
+    color: #fff;
+}
+
+ 
+footer .row .col-md-3 .footer__widget .icon a:nth-child(4):hover {
+    background-color: #5851DB;
+    
+}
+footer .row .col-md-3 .footer__widget .icon a:nth-child(5):hover {
+    background-color: #FD1D1D;
+    color: #fff;
+}
+
+
+footer .container .par{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #666666;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+footer .container .par i{
+    color: #ca1515;
+}
+footer .container .par a{
+    text-decoration: none;
+    color: #5C5C5C;
+    transition: .8s;
+    font-size: 16px;
+}
+footer .container .par a:hover{
+    color: #ca1515;
+}
+@media screen and (min-width:576px) and (max-width:991px){
+    
+    footer .container{
+        margin-bottom: 5px;
+    }
+    footer .row .col-md-3 {
+        width: fit-content;
+        padding:0 10% 0 0;
+        margin-left: 12%;
+    }
+    footer .row .col-md-3 .footer-about p{
+        width: 100%;
+        font-size: 16px;
+    }
+    footer .row .col-md-2 .footer__widget {
+        width: 100%;
+        
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    footer .row .col-md-2 .footer__widget h6{
+        font-size: 14px;
+    }
+    footer .row .col-md-2 .footer__widget ul a{
+        font-size: 13.5px;
+    }
+    
+    footer .row .col-md-3 .footer__widget{
+        margin-top: 6%;
+    }
+    footer .row .col-md-3 .footer__widget h6{
+        line-height: 20px;
+        font-size: 13px;
+
+    }
+    footer .row .col-md-3 .footer__widget .site-btn{
+        font-size: 13px;
+        padding: 15px 25px;
+        
+    }
+
+}
+@media screen and (max-width:575px){
+    footer .row .col-md-2 .footer__widget{
+        margin: 1px;
+    }
+    footer .row .col-md-3 .footer__widget{
+        margin: 1px;
+    }
+    footer .row .col-md-3 .footer__widget form input{
+        width: 100%;
+    }
+    footer .row .col-md-3 .footer__widget .site-btn{
+        right: 0%;
+    }
+    footer .row .col-md-3 .footer-about p{
+        width: 100%;
+    }
+}
+ 
+
+
+
+/* end footer */
 
