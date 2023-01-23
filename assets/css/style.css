@@ -14,10 +14,15 @@ body{
 ul{
     list-style-type: none;
 }
-/* start navbar */
-nav{
+.new-bg-color{
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px #d8d8d8;
+}
+/* start navbar */
+
+nav{
+    /* background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px #d8d8d8; */
     position: sticky;
 } 
 .navbar .navbar-nav .nav-item{
