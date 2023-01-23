@@ -11,13 +11,18 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
+.new-bg-color{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px #d8d8d8;
+}
+
 ul{
     list-style-type: none;
 }
 /* start navbar */
 nav{
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px #d8d8d8;
+    /* background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px #d8d8d8; */
     position: sticky;
 } 
 .navbar .navbar-nav .nav-item{
